@@ -3,22 +3,35 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: sh4dy's blog
-subtitle: "Hey, I'm sh4dy, a software security enthusiast"
-description: 'Software security and development enthusiast'
+title: Session0 Logbook
+subtitle: "Notes from the session0 lab"
+description: "Session0 Logbook covers ethical hacking, penetration testing, bug bounties, web application security, CTFs, and hands-on InfoSec tips."
 keywords:
-author: sh4dy
+  - session0
+  - session0 blog
+  - ethical hacking
+  - penetration testing
+  - bug bounty
+  - bug bounties
+  - web application security
+  - web security
+  - infosec
+  - information security
+  - ctf writeups
+  - hands-on infosec tips
+author: Session0
 language: en
-timezone: ''
+timezone: Asia/Kolkata
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+## Keep the GitHub Pages test URL for now. Update `url` and `root` when moving to session0.dev.
 url: https://0xkrat0s.github.io/test-blog
-permalink: :year/:month/:day/:title/
+root: /test-blog/
+permalink: blog/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false
+  trailing_html: false
 
 # Directory
 source_dir: source
@@ -63,8 +76,8 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 1
-  order_by: date
+  per_page: 5
+  order_by: -date
   
 tag_generator:
   per_page: 20
@@ -99,6 +112,8 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+  - _posts/tmp/**
+  - images/**
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

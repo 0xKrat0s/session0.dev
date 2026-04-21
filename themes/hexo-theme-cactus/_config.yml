@@ -3,9 +3,9 @@
 ##############################################################################
 
 # Link to a page that gives an overview of all your projects.
-# This can be an external link (e.g., to you GitHub profile) or to another
+# This can be an external link (e.g., to your GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/0xSh4dy
+projects_url: /
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,6 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: http://github.com/0xSh4dy
 
 
 # Links to your social media accounts.
@@ -26,19 +25,7 @@ nav:
 # only 'mail' is an exception.
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
-social_links:
-  -
-    icon: github
-    link: https://github.com/0xsh4dy
-  -
-    icon: twitter
-    link: https://x.com/sh4dy_0011
-  -
-    icon: linkedin
-    link: https://www.linkedin.com/in/rakshit-awasthi-114ba91b9/
-  -
-    icon: mail
-    link: mailto:rakshitawasthi14@email.com
+social_links: []
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -71,7 +58,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2022
+  start_year: 2026
   end_year:
   
 
@@ -81,7 +68,7 @@ copyright:
 error_404:
   enabled: true
   title: "404 Page Not Found"
-  description: "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+  description: "The page you are looking for has moved, no longer exists, or is still being published."
 
 
 ##############################################################################
@@ -199,8 +186,8 @@ umami_analytics:
 # logo and/or favicons of you website.
 # To generate hash: `$ echo -n "name@email.com" | md5`.
 gravatar:
-  email: rakshitawasthi14@gmail.com
-  hash: 460775d9e12657ff17930e264d4bba5c
+  email:
+  hash:
 
 # loads libraries and styles from CDN instead or relying on local files
 cdn:

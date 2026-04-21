@@ -1,9 +1,19 @@
 <head>
+    <% const seo = seo_data(page); %>
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <% if (seo.keywords) { %><meta name="keywords" content="<%= seo.keywords %>"><% } %>
+    <meta name="author" content="<%= seo.authorName %>">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#111827">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="<%= seo.canonicalUrl %>">
+    <link rel="manifest" href="<%- url_for('/site.webmanifest') %>">
     <%- open_graph({
         image:          thumbnail(page),
         fb_app_id:      theme.open_graph.fb_app_id,
@@ -12,6 +22,9 @@
         google_plus:    theme.open_graph.google_plus,
     }) %>
     <%- meta(page) %>
+    <meta name="twitter:title" content="<%= seo.title %>">
+    <meta name="twitter:description" content="<%= seo.description %>">
+    <% if (seo.imageUrl) { %><meta name="twitter:image" content="<%= seo.imageUrl %>"><% } %>
     <% if (theme.favicon) { %>
       <% if (theme.favicon.desktop) { %>
         <% if (theme.gravatar && (theme.gravatar.email || theme.gravatar.hash) && theme.favicon.desktop.gravatar) { %>
@@ -66,7 +79,7 @@
       <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml" />
     <% } %>
 	<!-- mathjax -->
-	<% if (theme.mathjax.enabled) {%>
+    <% if (theme.mathjax.enabled) {%>
 		<script type="text/x-mathjax-config">
 		  MathJax.Hub.Config({
 			tex2jax: {
@@ -77,4 +90,5 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<% } %>
+    <script type="application/ld+json"><%- JSON.stringify(seo.schemas) %></script>
 </head>
