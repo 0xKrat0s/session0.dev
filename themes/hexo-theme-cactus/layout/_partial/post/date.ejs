@@ -12,5 +12,11 @@
           <time datetime="<%= date_xml(post.date) %>" class="dt-published" itemprop="datePublished"><%= date(post.date, config.date_format) %></time>
         <% } %>
       <% } %>
+      <span class="post-reading-meta">
+        <span class="post-reading-separator" aria-hidden="true">|</span>
+        <span class="post-symbols-count"><%= readingSymbolsCount(post) %> symbols</span>
+        <span class="post-reading-separator" aria-hidden="true">|</span>
+        <span class="post-reading-time"><%= readingTimeText(post) %></span>
+      </span>
     </div>
 <% } %>

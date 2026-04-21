@@ -120,6 +120,17 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-cactus
 
+# Reading metrics
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: true
+  awl: 5
+  wpm: 250
+  suffix: "min read"
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
