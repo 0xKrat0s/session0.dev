@@ -1,7 +1,7 @@
 ---
-title: Android Security Internals
+title: Introduction to Android Security
 date: 2026-04-22 14:16:32
-updated: 2026-04-22 14:16:32
+updated: 2026-04-22 16:04:14
 description: Explore how Android security really works under the hood. This guide breaks down Android architecture, app sandboxing, permissions, Binder IPC, SELinux, and Verified Boot in a simple, practical way—helping developers, security researchers, and pentesters understand how Android protects apps and data at multiple layers.
 keywords:
   - android security for beginners
