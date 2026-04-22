@@ -33,7 +33,7 @@ In this post, we’ll walk through the core fundamentals of Android security—c
 
 Android follows a layered architecture, where each layer depends on the one below it. This design is not just for modularity—it’s a key part of its security model.
 
-![Android Architecture](android-stack.png)
+![Android Architecture](Introduction-to-Android-Security/android-stack.png)
 
 ### Key Layers of Android
 
@@ -98,7 +98,7 @@ Among these, the **Application Sandbox** is the most critical.
 
 At the heart of Android security lies the **Application Sandbox**.
 
-![Android app sandbox diagram showing apps isolated by unique Linux UIDs with no direct access between them.](application-sandbox.png)
+![Android app sandbox diagram showing apps isolated by unique Linux UIDs with no direct access between them.](Introduction-to-Android-Security/application-sandbox.png)
 
 ### How the Sandbox Works
 
@@ -171,7 +171,7 @@ Permissions help protect:
   * **Requested from the user at runtime (dangerous permissions)**
 
 For example, accessing the camera requires user approval while the app is running.
-![](camera-permission.png)
+![](Introduction-to-Android-Security/camera-permission.png)
 
 ### Behind the Scenes
 
@@ -198,7 +198,8 @@ Internally, Android maps high-level app permissions to **Linux Group IDs (GIDs)*
 * The **Linux kernel enforces access control** based on this group
 
 ### Workflow for using permissions
-![High-level workflow for using permissions on Android](workflow-overview.svg)
+
+![High-level workflow for using permissions on Android](Introduction-to-Android-Security/workflow-overview.svg)
 
 The permission workflow in Android is straightforward: an app first checks if it needs access, declares the required permission, and if it involves sensitive data, the system prompts the user at runtime. The user can then allow or deny the request, and based on this decision, the app either gains access or is restricted. This ensures users stay in control of their data while the system enforces security in the background.
 
