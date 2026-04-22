@@ -24,9 +24,9 @@ language: en
 timezone: Asia/Kolkata
 
 # URL
-## Keep the GitHub Pages test URL for now. Update `url` and `root` when moving to session0.dev.
-url: https://0xkrat0s.github.io/test-blog
-root: /test-blog/
+## Keep the GitHub Pages repo URL for now. Update `url` and `root` again if you later switch to the custom domain directly.
+url: https://0xkrat0s.github.io/session0.dev
+root: /session0.dev/
 permalink: blog/:title/
 permalink_defaults:
 pretty_urls:
@@ -135,5 +135,5 @@ symbols_count_time:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/0xKrat0s/test-blog.git
+  repo: https://github.com/0xKrat0s/session0.dev.git
   branch: gh-pages
