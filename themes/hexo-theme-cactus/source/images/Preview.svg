@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Session0 Logbook</title>
+  <desc id="desc">Session0 shield logo for the blog header.</desc>
+  <defs>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="48" fill="#0b1220"/>
+  <path d="M160 34l92 30v71c0 68-38 119-92 151-54-32-92-83-92-151V64l92-30z" fill="url(#shield)"/>
+  <path d="M160 73l57 19v43c0 45-22 81-57 104-35-23-57-59-57-104V92l57-19z" fill="#0f172a" opacity=".92"/>
+  <path d="M116 158c0-26 19-46 44-46 16 0 30 7 39 19l-22 15c-4-5-10-8-16-8-11 0-19 9-19 20s8 20 19 20c6 0 12-3 16-8l22 15c-9 12-23 19-39 19-25 0-44-20-44-46z" fill="#e2fdf3"/>
+  <text x="160" y="255" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#e2fdf3">S0</text>
+</svg>
