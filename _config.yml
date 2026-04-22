@@ -24,9 +24,9 @@ language: en
 timezone: Asia/Kolkata
 
 # URL
-## Keep the GitHub Pages repo URL for now. Update `url` and `root` again if you later switch to the custom domain directly.
-url: https://0xkrat0s.github.io/session0.dev
-root: /session0.dev/
+## Live custom domain configuration.
+url: https://session0.dev
+root: /
 permalink: blog/:title/
 permalink_defaults:
 pretty_urls:

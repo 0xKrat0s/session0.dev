@@ -9,8 +9,8 @@ keywords:
   - ethical hacking blog
   - penetration testing blog
 ---
-Session0 Logbook is a personal blog-in-progress and the future home of `session0.dev`.
+Session0 Logbook is the live home of `session0.dev`.
 
 This space is being shaped around practical security learning, write-ups, and field notes covering ethical hacking, penetration testing, bug bounties, web application security, CTFs, and hands-on InfoSec tips.
 
-For now, this version is the GitHub Pages test build while the content, branding, and publishing flow are being finalized.
+This space is being shaped into a focused collection of security write-ups, experiments, and field notes as the site continues to grow.

@@ -18,10 +18,10 @@ tags:
 ---
 Welcome to **Session0 Logbook**.
 
-This is the first public test post for the future home of `session0.dev`, where I will be publishing hands-on notes and walkthroughs on ethical hacking, penetration testing, bug bounties, web application security, CTFs, and practical InfoSec tips.
+This is the first public post on `session0.dev`, where I will be publishing hands-on notes and walkthroughs on ethical hacking, penetration testing, bug bounties, web application security, CTFs, and practical InfoSec tips.
 
 <!-- more -->
 
-Right now the site is intentionally simple: one clean post, a fresh brand reset, and a stronger SEO foundation before the full publishing flow goes live.
+Right now the site is intentionally simple: one clean post, a focused brand reset, and a stronger SEO foundation for everything that follows.
 
 More write-ups are on the way soon.
